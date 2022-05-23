@@ -37,4 +37,5 @@ section input[type="button"]:active {
 p {
     font-weight: bolder;
     font-size: 2rem;
+    color: tomato;
 }
