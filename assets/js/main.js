@@ -47,14 +47,23 @@ const encrypt = () => {
     // console.log(newInput);
     for (let i = 0; i < newInput.length; i++) {
         // console.log(newInput[i]);
-        for (let n = 0; n < morseAlphabet.length; n++) {
-            // console.log(morseAlphabet[n]);
-            if (newInput[i] == morseAlphabet[n].letter) {
-                outputMorse += morseAlphabet[n].morseCode
+        morseAlphabet.map((el) => {
+            console.log(el.letter);
+            if (newInput[i] == el.letter) {
+                outputMorse += el.morseCode
                     // console.log(outputMorse);
                 outputCrypt.innerHTML = outputMorse;
             }
-        }
+        })
+
+        // for (let n = 0; n < morseAlphabet.length; n++) {
+        //     // console.log(morseAlphabet[n]);
+        //     if (newInput[i] == morseAlphabet[n].letter) {
+        //         outputMorse += morseAlphabet[n].morseCode
+        //             // console.log(outputMorse);
+        //         outputCrypt.innerHTML = outputMorse;
+        //     }
+        // }
 
 
     }
