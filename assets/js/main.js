@@ -52,7 +52,7 @@ const encrypt = () => {
         morseAlphabet.map((el) => {
             // console.log(el.letter);
             if (newInput[i] == el.letter) {
-                outputMorse += el.morseCode
+                outputMorse += `${el.morseCode}  `
                     // console.log(outputMorse);
                 outputCrypt.innerHTML = outputMorse;
             }
