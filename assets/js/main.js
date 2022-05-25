@@ -38,6 +38,8 @@ let morseAlphabet = [
     { letter: "Z", morseCode: "--.." }
 ];
 
+
+
 const input = document.getElementById('input_text')
 const outputCrypt = document.getElementById('output_crypt')
 
@@ -48,7 +50,7 @@ const encrypt = () => {
     for (let i = 0; i < newInput.length; i++) {
         // console.log(newInput[i]);
         morseAlphabet.map((el) => {
-            console.log(el.letter);
+            // console.log(el.letter);
             if (newInput[i] == el.letter) {
                 outputMorse += el.morseCode
                     // console.log(outputMorse);
